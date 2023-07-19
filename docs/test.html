@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module test</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>test</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Ccryptox%5Cdataloop-home-assignment%5Ctest.py">c:\users\cryptox\dataloop-home-assignment\test.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="test.html#Data">Data</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Data">class <strong>Data</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Data">Data</a>(data=None,&nbsp;default=None,&nbsp;**kwargs)<br>
+&nbsp;<br>
+Author&nbsp;-&nbsp;Johann9616@gmail.com<br>
+Build&nbsp;a&nbsp;Pythonic&nbsp;data&nbsp;model&nbsp;class&nbsp;`<a href="#Data">Data</a>`&nbsp;with&nbsp;the&nbsp;following&nbsp;requirements:<br>
+&nbsp;<br>
+1.&nbsp;loads&nbsp;a&nbsp;dictionary&nbsp;and&nbsp;can&nbsp;save&nbsp;to&nbsp;dictionary:&nbsp;`to_dict`,&nbsp;`from_dict`<br>
+2.&nbsp;ability&nbsp;to&nbsp;instantiate&nbsp;directly&nbsp;from&nbsp;the&nbsp;class<br>
+3.&nbsp;default&nbsp;value:&nbsp;can&nbsp;define&nbsp;a&nbsp;default&nbsp;value&nbsp;for&nbsp;attributes<br>
+4.&nbsp;autocomplete<br>
+5.&nbsp;dynamic&nbsp;and&nbsp;general&nbsp;usability&nbsp;for&nbsp;the&nbsp;class&nbsp;(easily&nbsp;define&nbsp;new&nbsp;data&nbsp;structures)<br>
+6.&nbsp;ability&nbsp;to&nbsp;reflect&nbsp;inner&nbsp;value&nbsp;on&nbsp;the&nbsp;main&nbsp;level<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Data-__delattr__"><strong>__delattr__</strong></a>(self, name)</dt><dd><tt>Handles&nbsp;attribute&nbsp;deletion.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(str):&nbsp;Name&nbsp;of&nbsp;the&nbsp;attribute.</tt></dd></dl>
+
+<dl><dt><a name="Data-__getattr__"><strong>__getattr__</strong></a>(self, name, value=100)</dt><dd><tt>Get&nbsp;attribute,&nbsp;if&nbsp;doesn't&nbsp;exist,&nbsp;it&nbsp;will&nbsp;a&nbsp;new&nbsp;attribute&nbsp;with&nbsp;the&nbsp;key&nbsp;and&nbsp;deafult&nbsp;value<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(str):&nbsp;&nbsp;Name&nbsp;of&nbsp;the&nbsp;attribute.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;(int,&nbsp;optional):&nbsp;Value&nbsp;for&nbsp;new&nbsp;attribute&nbsp;added.&nbsp;Defaults&nbsp;to&nbsp;100.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Any:&nbsp;The&nbsp;value&nbsp;of&nbsp;the&nbsp;attribute.</tt></dd></dl>
+
+<dl><dt><a name="Data-__init__"><strong>__init__</strong></a>(self, data=None, default=None, **kwargs)</dt><dd><tt>Initializes&nbsp;the&nbsp;data&nbsp;instance<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;data&nbsp;(dict,&nbsp;optional):&nbsp;current&nbsp;dict.&nbsp;Defaults&nbsp;to&nbsp;None.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;default&nbsp;(dict,&nbsp;optional):&nbsp;default&nbsp;dict.&nbsp;Defaults&nbsp;to&nbsp;None.</tt></dd></dl>
+
+<dl><dt><a name="Data-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>Returns&nbsp;a&nbsp;string&nbsp;representation&nbsp;of&nbsp;the&nbsp;<a href="#Data">Data</a>&nbsp;instance.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;The&nbsp;string&nbsp;representation&nbsp;of&nbsp;the&nbsp;<a href="#Data">Data</a>&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="Data-__setattr__"><strong>__setattr__</strong></a>(self, name, value)</dt><dd><tt>Handles&nbsp;attribute&nbsp;assignment.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(str):&nbsp;Name&nbsp;of&nbsp;the&nbsp;attribute.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;(Any):&nbsp;Value&nbsp;to&nbsp;assign&nbsp;to&nbsp;the&nbsp;attribute.</tt></dd></dl>
+
+<dl><dt><a name="Data-me"><strong>me</strong></a>(self)</dt><dd><tt>Converts&nbsp;the&nbsp;<a href="#Data">Data</a>&nbsp;instance&nbsp;to&nbsp;a&nbsp;dictionary.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dict:&nbsp;The&nbsp;dictionary&nbsp;representation&nbsp;of&nbsp;the&nbsp;<a href="#Data">Data</a>&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="Data-to_dict"><strong>to_dict</strong></a>(self)</dt><dd><tt>Converts&nbsp;the&nbsp;<a href="#Data">Data</a>&nbsp;instance&nbsp;to&nbsp;a&nbsp;dictionary.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dict:&nbsp;The&nbsp;dictionary&nbsp;representation&nbsp;of&nbsp;the&nbsp;<a href="#Data">Data</a>&nbsp;instance.</tt></dd></dl>
+
+<hr>
+Class methods defined here:<br>
+<dl><dt><a name="Data-from_dict"><strong>from_dict</strong></a>(data_dict, default=None)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Creates&nbsp;a&nbsp;new&nbsp;<a href="#Data">Data</a>&nbsp;instance&nbsp;from&nbsp;a&nbsp;dictionary.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;data_dict&nbsp;(dict):&nbsp;Dictionary&nbsp;to&nbsp;initialize&nbsp;the&nbsp;<a href="#Data">Data</a>&nbsp;instance.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;default&nbsp;(dict,&nbsp;optional):&nbsp;Default&nbsp;dictionary.&nbsp;Defaults&nbsp;to&nbsp;None.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Data">Data</a>:&nbsp;The&nbsp;instantiated&nbsp;<a href="#Data">Data</a>&nbsp;<a href="builtins.html#object">object</a>.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>data</strong> = {'id': '1', 'metadata': {'system': {'height': 100, 'size': 10.7}, 'user': {'batch': 10}}, 'name': 'first'}<br>
+<strong>my_inst_1</strong> = {'id': '1', 'name': 'first', 'metadata': {'syste...e': 10.7, 'height': 100}, 'user': {'batch': 10}}}<br>
+<strong>my_inst_2</strong> = {'name': 'my'}</td></tr></table>
+</body></html>
