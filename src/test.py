@@ -1,6 +1,7 @@
 class Data:
     """  
     Author - Johann9616@gmail.com
+    
     Build a Pythonic data model class `Data` with the following requirements:
 
     1. loads a dictionary and can save to dictionary: `to_dict`, `from_dict`
